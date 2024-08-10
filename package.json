@@ -1,0 +1,40 @@
+{
+	"name": "@wymjs/type",
+	"version": "0.0.0",
+	"type": "module",
+	"description": "Typescript 通用高級類型",
+	"main": "index.d.ts",
+	"types": "index.d.ts",
+	"files": [
+		"index.d.ts",
+		"readme.md"
+	],
+	"scripts": {
+		"publish-package": "npm publish",
+		"lint": "eslint --fix --no-ignore --max-warnings=0",
+		"format": "prettier --cache --write",
+		"prepare": "husky install"
+	},
+	"homepage": "https://github.com/wymjs/type",
+	"keywords": [
+		"wymjs",
+		"typescript",
+		"type"
+	],
+	"license": "ISC",
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx,vue}": "pnpm run lint",
+		"*.{js,jsx,ts,tsx,vue,css,sass,scss,less}": "pnpm run format"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^7.1.1",
+		"@typescript-eslint/parser": "^7.1.1",
+		"eslint": "^8.57.0",
+		"eslint-plugin-unused-imports": "^3.0.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.1.0",
+		"prettier": "^3.1.0",
+		"tsup": "^8.0.2",
+		"typescript": "^5.2.2"
+	}
+}
