@@ -1,6 +1,6 @@
 {
 	"name": "@wymjs/type",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"type": "module",
 	"description": "Typescript 通用高級類型",
 	"main": "index.d.ts",
@@ -10,7 +10,7 @@
 		"readme.md"
 	],
 	"scripts": {
-		"publish-package": "npm publish",
+		"publish-package": "npm publish --access public",
 		"lint": "eslint --fix --no-ignore --max-warnings=0",
 		"format": "prettier --cache --write",
 		"prepare": "husky install"
